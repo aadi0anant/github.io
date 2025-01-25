@@ -263,10 +263,6 @@ It also contains the footer section and back to top button functionalities.
     let backTopButton = document.createElement('button');
     backTopButton.className = 'back-top-button p-2 bg-primary';
     backTopButton.innerHTML = `<i class="fa-solid fa-arrow-up"></i>`
-    backTopButton.style.width = '70px'
-    backTopButton.style.position = 'fixed';
-    backTopButton.style.top = '70%';
-    backTopButton.style.right = '0';
     backTopButton.style.display = 'none';
 
     // Show the button when scrolling down

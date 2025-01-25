@@ -70,3 +70,14 @@ Description: This is the style sheet for the html file. It contains the styling 
 .event:hover {
     background-color: #e2e6ea;
 }
+
+.back-top-button{
+    position: fixed;
+    width: 70px;
+    top: 70%;
+    right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
