@@ -1,55 +1,45 @@
+<!--
+File: login.html
+Author: Ritik Sharma(100952840), Brendan Obilo(100952871)
+Date: 2025-02-23
+Description: This is the login page for the Volunteer Connect website. It contains a form for users to log in.
+-->
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
-
-    <!-- CSS Section -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="./content/app.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    
 <header>
 
 </header>
-
-<!-- Main Content -->
+<!-- Login Form -->
 <main class="container" id="mainContent">
     <div class="row">
         <div class="offset-md-3 col-md-6 col-sm-12">
             <div class="login" id="contentArea">
-                <h1 class="display-4">Login</h1>
+                <h1>Login</h1>
 
                 <div id="messageArea"></div>
 
-                <form id="loginForm" novalidate>
+                <form class="col-lg-6 col-md-10 col-sm-12 mb-4" id="loginForm">
 
-                    <div class="form-group mb-2">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="fa fa-user">
-                            </i>
-                          </span>
-                            <input type="text" class="form-control" id="userName" name="userName"  required
-                                   value="" placeholder="Enter your username">
-                        </div>
-
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Username</span>
+                        <input id="username" name="username"  type="text" class="form-control"
+                               aria-describedby="Username" aria-label="Username" required>
                     </div>
-
-                    <div class="form-group mb-2">
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="fa fa-lock">
-                            </i>
-                          </span>
-                            <input type="password" class="form-control" id="password" name="password"  required
-                                   value="" placeholder="Enter your password">
-                        </div>
-
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Password</span>
+                        <input id="password" name="password"  type="password" class="form-control"
+                               aria-describedby="Password" aria-label="Password" required>
                     </div>
                     <div class="text-end">
                         <button id="loginButton" type="button" class="btn btn-primary btn-lg">
@@ -61,21 +51,15 @@
                 </form>
 
             </div>
-            <p class="text-center text-muted small">
-                Don't have an account?
-                <a href="register.html">Register Here!</a>
-            </p>
         </div>
     </div>
 </main>
 
 
 
+<script src="./js/main.js"></script>
+<script src="./js/login.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Scripting Section -->
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="./scripts/namespace.js"></script>
-<script src="./scripts/contact.js"></script>
-<script src="./scripts/app.js"></script>
 </body>
 </html>

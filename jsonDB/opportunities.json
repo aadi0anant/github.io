@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Beach Cleanup",
+    "description": "Join us in cleaning up our local beach and help protect marine life.",
+    "dateTime": "March 15, 2025, 10:00 AM"
+  },
+  {
+    "title": "Community Garden Project",
+    "description": "Help us plant and maintain a community garden for fresh produce.",
+    "dateTime": "March 20, 2025, 9:00 AM"
+  },
+  {
+    "title": "Soup Kitchen Assistance",
+    "description": "Assist in preparing and serving meals to those in need.",
+    "dateTime": "March 25, 2025, 5:00 PM"
+  },
+  {
+    "title": "Park Restoration",
+    "description": "Help restore the beauty of our local park by planting trees and clearing debris.",
+    "dateTime": "April 5, 2025, 8:00 AM"
+  },
+  {
+    "title": "Animal Shelter Support",
+    "description": "Assist in caring for animals and maintaining shelter facilities.",
+    "dateTime": "April 10, 2025, 1:00 PM"
+  },
+  {
+    "title": "Library Book Drive",
+    "description": "Organize and distribute books to promote literacy in the community.",
+    "dateTime": "April 15, 2025, 11:00 AM"
+  },
+  {
+    "title": "Senior Home Visits",
+    "description": "Spend quality time with senior residents and participate in activities.",
+    "dateTime": "April 20, 2025, 3:00 PM"
+  },
+  {
+    "title": "Recycling Workshop",
+    "description": "Educate the community about recycling and sustainable practices.",
+    "dateTime": "April 25, 2025, 10:00 AM"
+  },
+  {
+    "title": "Charity Run Assistance",
+    "description": "Help with organizing and managing a charity run event.",
+    "dateTime": "April 30, 2025, 6:00 AM"
+  }
+]

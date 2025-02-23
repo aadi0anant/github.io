@@ -1,15 +1,19 @@
-<!DOCTYPE html>
+<!--
+File: contact.html
+Author: Ritik Sharma(100952840), Brendan Obilo(100952871)
+Date: 2025-01-25
+Description: This is the contact page for the Volunteer Connect website. It contains a form for users to submit their contact information and a message.
+-->
+
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-
-
-    <!-- CSS Section -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="./content/app.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -17,54 +21,59 @@
 
 </header>
 
-<main class="container">
-    <h1>Contact Us</h1>
 
+<main class="container contactMain mt-5">
+    <h1>Contact Us</h1>
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Submission Received</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thank you for contacting us! You will be redirected to the Home Page shortly.
+                </div>
+                <!--This div will show submitted details from contact us form. -->
+                <div id="modalInfoBody" class="modal-body">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form -->
     <form class="col-lg-6 col-md-10 col-sm-12 mb-4">
 
         <div class="input-group mb-3">
-            <label for="fullName" class="input-group-text">Full Name</label>
-            <input id="fullName" name="fullName" type="text" class="form-control"
-                   aria-describedby="fullName-error" required>
-
-            <span id="fullName-error" class="text-danger"></span>
+            <span class="input-group-text">Full Name</span>
+            <input id="contactFullName" name="contactFullName"  type="text" class="form-control"
+                   aria-describedby="Full Name" aria-label="Full Name" required>
         </div>
-
         <div class="input-group mb-3">
-            <label for="contactNumber" class="input-group-text">Contact Number</label>
-            <input id="contactNumber" name="contactNumber" type="tel" class="form-control"
-                   aria-describedby="contactNumber-error" required>
-
-            <span id="contactNumber-error" class="text-danger"></span>
+            <span class="input-group-text">Email Address</span>
+            <input id="contactEmailAddress" name="contactEmailAddress"  type="email" class="form-control"
+                   aria-describedby="Email Address" aria-label="Email Address" required>
         </div>
-
         <div class="input-group mb-3">
-            <label for="emailAddress" class="input-group-text">Email Address</label>
-            <input id="emailAddress" name="emailAddress" type="email" class="form-control"
-                   aria-describedby="emailAddress-error" required>
-
-            <span id="emailAddress-error" class="text-danger"></span>
+            <span class="input-group-text">Subject</span>
+            <textarea id="subject" name="subject"  type="tel" class="form-control"
+                      aria-describedby="Subject Area" aria-label="Subject Area" required></textarea>
         </div>
-
-        <div class="mb-3 form-check">
-            <input id="subscribeCheckbox" type="checkbox" class="form-check-input">
-            <label class="form-check-label" for="subscribeCheckbox">Subscribe to our Contact List</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Message</span>
+            <textarea id="message" name="message"  type="tel" class="form-control"
+                      aria-describedby="Message Area" aria-label="Message Area" required></textarea>
         </div>
-
-        <button id="sendButton" name="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-share-from-square"></i> Submit</button>
-        <button id="cancelButton" name="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-xmark"></i> Cancel</button>
+        <button id="sendButton" name="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Submit</button>
+        <button id="cancelButton" name="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-rotate-left"></i> Cancel</button>
     </form>
-
-    <div class="col-lg-6 col-md-4">
-        <a href = "contact-list.html" class="btn btn-outline-primary mt-4"><i class="fa-solid fa-user"></i> Show Contact</a>
-    </div>
 </main>
 
-
-<!-- Scripting Section -->
-<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="./scripts/namespace.js"></script>
-<script src="./scripts/contact.js"></script>
-<script src="./scripts/app.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/contact.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
