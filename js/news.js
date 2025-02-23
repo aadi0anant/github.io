@@ -21,7 +21,8 @@ window.addEventListener("load", async function () {
     const articleBody = document.querySelector("article");
 
     // Declared and initialized variables
-    let count = 10;
+    let count = 30;
+    timer.textContent = count + ' mins';
     let nextNews = 1;
     let dataSize = 0;
 
@@ -34,23 +35,22 @@ window.addEventListener("load", async function () {
      */
     const counter = setInterval(async () => {
         // Counter
-        timer.textContent = count;
+        timer.textContent = count  + ' mins';
         count--;
 
         // Stop the counter after 10 seconds
-        if (count < 1) {
+        if (count === 1) {
+            count = 30
             await GetNews();
-            count = 10
         }
-    }, 1000)
+    }, 180000)
 
     /**
      * A function to fetch the latest news on ontario using the API keys
      * @returns {Promise<void>}
      */
     async function GetNews(){
-        const emptyArrayLength = 0;
-        await fetch("https://newsapi.org/v2/everything?q=Ontario&from=2025-02-22&sortBy=popularity&apiKey=76f00e9342cd4ee59ed052ec6b93b144")
+        await fetch(`https://api.thenewsapi.com/v1/news/top?api_token=1b9WyqTiaAFj1cYoBJyDjfyPKxvYZtwyYz4OLBbp&locale=ca&limit=3`)
             .then(response => {
                 if(response.status === responseCodes.BAD_REQUEST){
                     throw new Error("Error: Network Issue Please try again later");
@@ -60,8 +60,8 @@ window.addEventListener("load", async function () {
                 return response.json();
             })
             .then(data => {
-
-                if(data?.articles.length === emptyArrayLength){
+                let emptyArrayLength = 0;
+                if(data?.data?.length === emptyArrayLength){
                     dataSize = 1;
                 }else{
                     // remove error message div
@@ -69,13 +69,13 @@ window.addEventListener("load", async function () {
                     errorMessage.classList.remove("d-block", "alert-danger");
                     errorMessage.classList.add("d-none");
 
-                    dataSize = data?.articles.length;
+                    dataSize = data?.data?.length;
                     nextNews = Math.floor(Math.random()  * dataSize);
-                    console.log(data?.articles[nextNews]);
+                    console.log(data?.data[nextNews]);
 
-                    let displayNews = data?.articles[nextNews];
+                    let displayNews = data?.data[nextNews];
 
-                    newsImage.src = displayNews?.urlToImage;
+                    newsImage.src = displayNews?.image_url;
                     newsImage.alt = displayNews?.title;
                     newsTitle.textContent = displayNews?.title;
                     newsText.textContent = displayNews?.description;
