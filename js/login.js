@@ -49,7 +49,7 @@ window.addEventListener("load", function() {
                 const user = users.find(user => user.username === username && user.password === password);
                 if (user) {
                     // If user is authenticated, store user session in sessionStorage and redirect to home page
-                    sessionStorage.setItem('userSession', JSON.stringify(user));
+                    sessionStorage.setItem('userSession', JSON.stringify(user.username));
                     showMessage(`Welcome, ${user.name}!`, 'success');
                     // Redirect to home page after 2 seconds
                     setTimeout(() => {
