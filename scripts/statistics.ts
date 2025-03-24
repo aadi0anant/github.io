@@ -14,7 +14,7 @@ interface IStatEach {
 }
 
 async function fetchStatistics():Promise<IStatEach[]> {
-    const response = await fetch('/data/stats.json');
+    const response = await fetch('data/stats.json');
     const data = await response.json();
     return data.visits.slice(-7); // Get only the last 7 days
 }

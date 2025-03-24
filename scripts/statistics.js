@@ -1,6 +1,6 @@
 "use strict";
 async function fetchStatistics() {
-    const response = await fetch('/data/stats.json');
+    const response = await fetch('data/stats.json');
     const data = await response.json();
     return data.visits.slice(-7); // Get only the last 7 days
 }
