@@ -1,116 +1,110 @@
-"use strict";
-
 /**
- * Represents a contact with a name, contact number and email number
- */
-(function (core) {
-
-    class Contact {
-        /**
-         * Constructs a new contact instance
-         * @param fullName
-         * @param contactNumber
-         * @param emailAddress
-         */
-        constructor(fullName="", contactNumber="", emailAddress="") {
-            this._fullName = fullName;
-            this._contactNumber = contactNumber;
-            this._emailAddress = emailAddress;
-        }
-
-        /**
-         * Gets the full name of the contact
-         * @returns {string}
-         */
-        get fullName() {
-            return this._fullName;
-        }
-
-        /**
-         * Sets the full name of the contact. validates the input to ensure its non-empty string
-         * @param fullName
-         */
-        set fullName(fullName) {
-            if(typeof fullName !== "string" || fullName.trim() === "") {
-                throw new Error("Invalid fullName: must be non-empty string");
+File: contact.ts
+Author: Ritik Sharma(100952840), Brendan Obilo(100952871)
+Date: 2025-01-25
+Description: This is the contact typescript file that contains the Contact class. This class is responsible for creating a new contact object with the contact details.
+The contact details include the full name, email address, subject, and message. The class also has methods to validate the contact details and serialize the contact details into a string format suitable for storage.
+*/
+"use strict";
+export class Contact {
+    // Declare private fields
+    _fullName = "";
+    _email = "";
+    _subject = "";
+    _message = "";
+    /**
+     * The constructor that takes the contact details when created with attributes
+     * @param fullName
+     * @param email
+     * @param subject
+     * @param message
+     */
+    constructor(fullName = "", email = "", subject = "", message = "") {
+        this.fullName = fullName;
+        this.email = email;
+        this.subject = subject;
+        this.message = message;
+    }
+    /**
+     * A function that submits the form to the json file for storage using the async await
+     * @returns {Promise<void>}
+     */
+    async submitForm() {
+        const formData = {
+            fullName: this._fullName,
+            email: this._email,
+            subject: this._subject,
+            message: this._message
+        };
+        console.log("Submitting form:", formData);
+        try {
+            const localStorageData = localStorage.getItem("feedbacks");
+            let feedbacks = [];
+            // Retrieve existing feedbacks from Local Storage
+            if (localStorageData) {
+                feedbacks = await JSON.parse(localStorageData);
             }
-            this._fullName = fullName;
+            console.log(feedbacks);
+            // Add new feedback to the array
+            feedbacks.push(formData);
+            // Save the updated array back to Local Storage
+            localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
+            console.log("Form submitted successfully.");
         }
-
-        /**
-         * Gets the contact number for the Contact
-         * @returns {string}
-         */
-        get contactNumber() {
-            return this._contactNumber;
-        }
-
-        /**
-         * Sets the contact number the Contact. Validate to ensure it matches a 10-digit number format
-         * @param contactNumber
-         */
-        set contactNumber(contactNumber) {
-            const phoneRegex = /^\d{3}-\d{3}-\d{4}$/;   //905-555-5555
-            if(!phoneRegex.test(contactNumber)) {
-                throw new Error("Invalid Contact Number: must be 10 digit number");
-            }
-            this._contactNumber = contactNumber;
-        }
-
-        /**
-         * Gets the email address for the contact
-         * @returns {string}
-         */
-        get emailAddress() {
-            return this._emailAddress;
-        }
-
-        set emailAddress(address) {
-            const emailRegex = /[^\s@]+@[^\s@]+.[^\s@]+$/;
-            if(!emailRegex.test(address)) {
-                throw new Error("Invalid email address: must be a valid email address format.");
-            }
-            this._emailAddress = address;
-        }
-
-        /**
-         * Converts the contact details into a human-readable string
-         * @returns {string}
-         */
-        toString(){
-            return `Full Name: ${this._fullName}\n
-                    Contact Number: ${this._contactNumber}\n 
-                    Email Address: ${this._emailAddress}`;
-        }
-
-        /**
-         * Serializes the contact details into a string (csv) format suitable for storage
-         * @returns {string|null}
-         */
-        serialize(){
-            if(!this._fullName || !this._contactNumber || !this._emailAddress) {
-                console.error("One or more Contact Properties are missing or invalid");
-                return null;
-            }
-            return `${this._fullName},${this.contactNumber},${this.emailAddress}`;
-        }
-
-        /**
-         * Deserialize a csv string of contact details and updates the contact properties
-         * @param data
-         */
-        deserialize(data){
-            if(typeof data !== "string" || data.split(",").length !== 3) {
-                console.error("Invalid data format for deserialization")
-                return;
-            }
-            const propArray = data.split(",");
-            this._fullName = propArray[0];
-            this._contactNumber = propArray[1];
-            this._emailAddress = propArray[2];
+        catch (error) {
+            console.error("Submission Error:", error);
         }
     }
-
-    core.Contact = Contact;
-
-})(core || (core = {}));
+    /**
+     * Sets the full name of the contact
+     * @param fullName
+     */
+    set fullName(fullName) {
+        if (fullName.length <= 2) {
+            throw new Error("Invalid fullName: must be non-empty string");
+        }
+        this._fullName = fullName;
+    }
+    /**
+     * Sets the email address of the contact
+     * @param address
+     */
+    set email(address) {
+        const emailRegex = /[^\s@]+@[^\s@]+.[^\s@]+$/;
+        if (!emailRegex.test(address)) {
+            throw new Error("Invalid email address: must be a valid email address format.");
+        }
+        this._email = address;
+    }
+    /**
+     * Sets the subject of the contact
+     * @param subject
+     */
+    set subject(subject) {
+        if (subject.trim() === "") {
+            throw new Error("Invalid subject: must be non-empty string");
+        }
+        this._subject = subject;
+    }
+    /**
+     * Sets the message of the contact
+     * @param message
+     */
+    set message(message) {
+        if (message.trim() === "") {
+            throw new Error("Invalid message: must be non-empty string");
+        }
+        this._message = message;
+    }
+    /**
+     * Serialize the contact details into a string format suitable for storage
+     * @returns {string/null}
+     */
+    serialize() {
+        if (!this._fullName || !this._email || !this._message || !this._subject) {
+            return null;
+        }
+        return `${this._fullName} with ${this._email} has sent a message`;
+    }
+}
+//# sourceMappingURL=contact.js.map

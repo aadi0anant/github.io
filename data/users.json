@@ -1,26 +1,12 @@
-{
-  "users":
-          [
-            {
-              "DisplayName": "Bilbo Baggins",
-              "EmailAddress": "bilbobaggins@durhamcollege.ca",
-              "Username": "bbaggins",
-              "Password": "123456"
-            },
-
-            {
-              "DisplayName": "Samwise Gangee",
-              "EmailAddress": "samwisegangee@durhamcollege.ca",
-              "Username": "sgangee",
-              "Password": "789654"
-            },
-
-            {
-              "DisplayName": "admin",
-              "EmailAddress": "admin@durhamcollege.ca",
-              "Username": "admin",
-              "Password": "password"
-            }
-          ]
-
-}
+[
+    {
+        "username": "rsharma",
+        "password": "password123",
+        "name": "Ritik Sharma"
+    },
+    {
+        "username": "bobilo",
+        "password": "password456",
+        "name": "Brendan Obilo"
+    }
+]

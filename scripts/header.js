@@ -1,77 +1,76 @@
-"use strict";
-
 /**
- * Loads the navbar into the current page
+ * File: header.ts
+ * Author: Ritik Sharma(100952840), Brendan Obilo(100952871)
+ * Date: 2025-03-14
+ * Description: This is the header TypeScript file that contains the functionalities for the header.
+ *              It fetches the header component, updates the navbar links, and also checks for login.
+ */
+/**
+ * A function that loads the header component from the header.html file and appends it to the index.html.
  * @returns {Promise<void>}
  */
-export function LoadHeader(){
-    console.log("[INFO]  LoadHeader called...");
-
-    return fetch("views/components/header.html")
+export async function LoadHeader() {
+    console.log("[INFO] LoadHeader called...");
+    return await fetch("views/components/header.html")
         .then(response => response.text())
         .then(data => {
-            document.querySelector("header").innerHTML = data;
-            updateActiveNavLink();
-            CheckLogin();
-        })
-        .catch(error => console.log("[ERROR] unable to load header"));
-
-}
-
-/**
- * To update the navlink to determine the current page
- */
-export function updateActiveNavLink(){
-    console.log("[INFO] updateActiveNavLink called.....");
-
-    const currentPath = location.hash.slice(1) || "/";
-    const navLinks = document.querySelectorAll("nav a");
-
-    navLinks.forEach(link => {
-
-        const linkPath = link.getAttribute("href").replace("#", "");
-        if(currentPath === linkPath){
-            link.classList.add("active");
-        }else {
-            link.classList.remove("active");
-        }
+        document.querySelector("header").innerHTML = data;
+        UpdateNavLink();
+        CheckLogin();
     })
-}
-
-function handleLogout(event){
-    event.preventDefault();
-    sessionStorage.removeItem("user");
-    console.log("[INFO] User logged out. Update UI...");
-
-    LoadHeader().then(()=> {
-        location.hash = "/";
-    })
+        .catch(error => console.error("[ERROR] Unable to load header", error));
 }
 /**
- * Checks if the user is logged in already to update the nav link to log out
- *
+ * A function that updates the nav link to convert "Opportunities" link to "Donate" link
+ * and also sets the link to the current page to active.
+ * @returns {Promise<void>}
  */
-function CheckLogin(){
+export async function UpdateNavLink() {
+    // Get or create all the HTML elements in the header
+    const navbarLinks = document.getElementById('navbarLinks');
+    const donateLink = document.createElement('li');
+    const opportunitiesLink = document.getElementById('opportunitiesLink');
+    // Add "Donate" link dynamically to the navbar
+    donateLink.className = 'nav-item';
+    donateLink.innerHTML = `<a class="nav-link" href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</a>`;
+    navbarLinks.appendChild(donateLink);
+    // Change "Opportunities" link text to "Volunteer Now"
+    opportunitiesLink.innerHTML = `<i class="fa-solid fa-briefcase"></i> Volunteer Now`;
+}
+/**
+ * A function that checks if the user is logged in by checking the session storage.
+ * If the user is logged in, it updates the navbar accordingly.
+ * @returns {boolean | object} - Returns the user object if logged in, otherwise returns false.
+ */
+export function CheckLogin() {
     console.log("[INFO] Checking user login status");
-
-    const loginNav = document.getElementById("login");
-
-    if(!loginNav){
-        console.warn("[WARNING] loginNav element not found. skipping CheckLogin().")
-        return;
+    const loginNavItem = document.getElementById('login');
+    const messageArea = document.getElementById('messageAreaIndex');
+    const statNavItem = document.getElementById('statNavLink');
+    if (!loginNavItem) {
+        console.warn("[WARNING] loginNav element not found. Skipping CheckLogin().");
+        return false;
     }
-
-    const  userSession = sessionStorage.getItem("user");
-
-    if(userSession){
-
-        loginNav.innerHTML = `<i class="fas fa-sign-out-alt"></i> Logout`;
-        loginNav.href = "#";
-        loginNav.removeEventListener("click", handleLogout);
-        loginNav.addEventListener("click", handleLogout);
-    }else{
-        loginNav.innerHTML = `<i class="fas fa-sign-out-alt"></i> Login`;
-        loginNav.removeEventListener("click", handleLogout);
-        loginNav.addEventListener("click", ()=> location.hash ="/login" );
+    const userSession = sessionStorage.getItem('userSession');
+    if (userSession) {
+        statNavItem.style.display = 'block';
+        const user = JSON.parse(userSession);
+        loginNavItem.innerHTML = `<a class="nav-link" href="#">Logout</a>`;
+        loginNavItem.addEventListener('click', function (event) {
+            event.preventDefault();
+            messageArea.classList.remove('d-none');
+            messageArea.classList.add('d-block', 'alert', 'alert-success');
+            messageArea.textContent = `Goodbye ${user?.name}`;
+            setTimeout(() => {
+                location.hash = '/';
+            }, 2000);
+            sessionStorage.removeItem('userSession');
+        });
+        return user; // Return the full user object, not just the username
+    }
+    else {
+        statNavItem.style.display = 'none';
+        return false;
     }
 }
+//# sourceMappingURL=header.js.map
