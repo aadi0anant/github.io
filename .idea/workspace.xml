@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af060ce5-c26b-4a8e-b3ae-b28b60d120f8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/content/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/content/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +70,7 @@
       <workItem from="1740364683226" duration="8000" />
       <workItem from="1741647751698" duration="10000" />
       <workItem from="1742673493681" duration="5400000" />
-      <workItem from="1742777727983" duration="1862000" />
+      <workItem from="1742777727983" duration="1395000" />
     </task>
     <servers />
   </component>
@@ -77,8 +78,10 @@
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
+        <option value="$PROJECT_DIR$/scripts/eventPlanning.js.map" />
         <option value="$PROJECT_DIR$/scripts/eventPlanning.js" />
         <option value="$PROJECT_DIR$/scripts/eventPlanning.js.map" />
+        <option value="$PROJECT_DIR$/scripts/eventPlanning.js" />
       </list>
     </option>
   </component>
