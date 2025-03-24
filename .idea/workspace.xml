@@ -19,12 +19,12 @@
     &quot;assignee&quot;: &quot;aadi0anant&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/aadi0anant/INFT2202ASSIGNMENTS.git&quot;,
-    &quot;accountId&quot;: &quot;99c6bcf7-1199-495d-a438-a717e2b90599&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/aadi0anant/github.io.git",
+    "accountId": "99c6bcf7-1199-495d-a438-a717e2b90599"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -67,7 +67,7 @@
       <workItem from="1740364683226" duration="8000" />
       <workItem from="1741647751698" duration="10000" />
       <workItem from="1742673493681" duration="5400000" />
-      <workItem from="1742774620333" duration="166000" />
+      <workItem from="1742777727983" duration="522000" />
     </task>
     <servers />
   </component>
