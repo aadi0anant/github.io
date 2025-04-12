@@ -96,7 +96,7 @@ const router = new Router(routes);
         if (cancelButton && loginForm) {
             cancelButton.addEventListener("click", () => {
                 loginForm.reset();
-                router.navigate("/");
+                router.navigate("/home");
             });
         }
         else {

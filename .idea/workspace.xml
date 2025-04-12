@@ -1,227 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20621eba-3c07-4d85-a99c-c92584801817" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VolunteerConnect.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/images/logosvg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/images/volunteer1svg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/images/volunteer2svg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/images/volunteer3svg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/images/volunteer4svg.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/events.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/image.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/opportunities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/stats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/dist/color.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/dist/color.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/dist/color.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/dist/color.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/dist/color.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@kurkle/color/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/alert.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/base-component.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/button.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/carousel.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/collapse.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/dropdown.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/modal.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/offcanvas.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/popover.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/scrollspy.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/tab.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/toast.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/js/dist/tooltip.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@types/bootstrap/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/auto/auto.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/auto/auto.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/auto/auto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/auto/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chart.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chart.cjs.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chart.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chart.umd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chart.umd.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chunks/helpers.segment.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chunks/helpers.segment.cjs.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chunks/helpers.segment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/chunks/helpers.segment.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.bar.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.bubble.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.doughnut.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.line.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.pie.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.polarArea.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.radar.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/controller.scatter.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/controllers/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.adapters.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.animation.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.animations.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.animations.defaults.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.animator.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.config.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.controller.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.datasetController.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.defaults.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.element.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.interaction.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.layouts.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.layouts.defaults.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.plugins.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.registry.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.scale.autoskip.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.scale.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.scale.defaults.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.ticks.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/core.typedRegistry.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/core/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/elements/element.arc.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/elements/element.bar.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/elements/element.line.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/elements/element.point.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/elements/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers.cjs.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.canvas.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.collection.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.color.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.config.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.config.types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.core.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.curve.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.dom.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.easing.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.extras.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.interpolation.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.intl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.math.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.rtl.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/helpers.segment.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/helpers/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/index.umd.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/platform/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/platform/platform.base.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/platform/platform.basic.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/platform/platform.dom.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.colors.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.decimation.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/filler.drawing.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/filler.helper.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/filler.options.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/filler.segment.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/filler.target.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/filler.target.stack.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.filler/simpleArc.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.legend.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.subtitle.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.title.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/plugins/plugin.tooltip.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/scale.category.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/scale.linear.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/scale.linearbase.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/scale.logarithmic.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/scale.radialLinear.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/scale.time.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/scales/scale.timeseries.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types/animation.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types/basic.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types/color.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types/geometric.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types/layout.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/dist/types/utils.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/helpers/helpers.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/helpers/helpers.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/helpers/helpers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/helpers/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/chart.js/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/authguard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/authguard.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/authguard.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/contact.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/contact.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/contactUs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/contactUs.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/contactUs.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/eventPlanning.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/eventPlanning.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/eventPlanning.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/events.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/events.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/footer.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/footer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/gallery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/gallery.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/gallery.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/header.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/header.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/login.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/login.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/news.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/news.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/news.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/opportunities.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/opportunities.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/opportunities.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/responseCodes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/responseCodes.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/responseCodes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/router.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/router.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/statistics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/statistics.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/statistics.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/user.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/user.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/components/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/eventPlanning.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/events.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/news.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/opportunities.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/content/statistics.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="3cf9ae2e-858b-4259-92d1-0075781530d2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/client/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/client/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +29,7 @@
   "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2ve2g6gi1gGfP3xldLHlH0noW7V" />
+  <component name="ProjectId" id="2veCCY1o8sTviUJ5NkaXgf27iBs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -271,12 +53,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20621eba-3c07-4d85-a99c-c92584801817" name="Changes" comment="" />
-      <created>1744491326670</created>
+      <changelist id="3cf9ae2e-858b-4259-92d1-0075781530d2" name="Changes" comment="" />
+      <created>1744496025376</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1744491326670</updated>
-      <workItem from="1744491327831" duration="56000" />
+      <updated>1744496025376</updated>
+      <workItem from="1744496026606" duration="67000" />
     </task>
     <servers />
   </component>
